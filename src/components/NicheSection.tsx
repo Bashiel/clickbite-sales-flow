@@ -80,9 +80,7 @@ const NicheSection = () => (
             className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 animate-float"
             style={{ background: n.glowColor }}
           >
-            <n.icon className="w-7 h-7 gradient-text" style={{ color: "transparent", fill: "none", stroke: "url(#icon-grad)" }} />
-            {/* Fallback: use accent color */}
-            <n.icon className="w-7 h-7 text-accent absolute opacity-0" />
+            <n.icon className="w-7 h-7 text-accent" />
           </div>
           <h3 className="text-xl font-bold mb-1">{n.title}</h3>
           <p className="text-sm text-muted-foreground mb-5">{n.subtitle}</p>
