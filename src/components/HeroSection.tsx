@@ -55,7 +55,7 @@ const HeroSection = () => (
       transition={{ delay: 0.6 }}
       className="mt-6 text-sm text-muted-foreground"
     >
-      Se paga solo con los primeros 4 pedidos del mes.
+      aumenta en un 40% tus ventas online y ahorra en comisiones de apps intermediarias
     </motion.p>
   </section>
 );
