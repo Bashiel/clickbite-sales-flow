@@ -21,9 +21,8 @@ const HeroSection = () => (
       className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[1.05] max-w-5xl"
       style={{ textWrap: "balance" } as React.CSSProperties}
     >
-      Sitios que Venden:{" "}
-      <span className="gradient-text">100% Sin Comisiones</span> para Tu
-      Negocio Local.
+      Una Web Pensada para{" "}
+      <span className="gradient-text">Mejorar Tu Negocio</span>
     </motion.h1>
 
     <motion.p
@@ -56,7 +55,7 @@ const HeroSection = () => (
       transition={{ delay: 0.6 }}
       className="mt-6 text-sm text-muted-foreground"
     >
-      Más de 50 negocios locales ahorrando +$1.200/mes en comisiones.
+      Aumentá tus ventas en un 40% y sin pagar comisiones.
     </motion.p>
   </section>
 );
