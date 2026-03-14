@@ -21,9 +21,8 @@ const HeroSection = () => (
       className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[1.05] max-w-5xl"
       style={{ textWrap: "balance" } as React.CSSProperties}
     >
-      Sitios que Venden:{" "}
-      <span className="gradient-text">100% Sin Comisiones</span> para Tu
-      Negocio Local.
+      Una Web Pensada para{" "}
+      <span className="gradient-text">Mejorar Tu Negocio</span>
     </motion.h1>
 
     <motion.p
