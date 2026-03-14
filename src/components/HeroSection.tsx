@@ -11,7 +11,7 @@ const HeroSection = () => (
       transition={{ duration: 0.5 }}
       className="section-label mb-6"
     >
-      Digital Agency for Local Business
+      Agencia Digital para Negocios Locales
     </motion.p>
 
     <motion.h1
@@ -21,9 +21,9 @@ const HeroSection = () => (
       className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[1.05] max-w-5xl"
       style={{ textWrap: "balance" } as React.CSSProperties}
     >
-      Sites that Sell:{" "}
-      <span className="gradient-text">100% Commissions-Free</span> Websites
-      for Your Local Business.
+      Sitios que Venden:{" "}
+      <span className="gradient-text">100% Sin Comisiones</span> para Tu
+      Negocio Local.
     </motion.h1>
 
     <motion.p
@@ -33,7 +33,7 @@ const HeroSection = () => (
       className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10"
       style={{ textWrap: "pretty" } as React.CSSProperties}
     >
-      Affordable, Fast, & Organized websites direct to your WhatsApp.
+      Páginas web accesibles, rápidas y organizadas directo a tu WhatsApp.
     </motion.p>
 
     <motion.a
@@ -47,7 +47,7 @@ const HeroSection = () => (
       whileTap={{ scale: 0.98 }}
       className="gradient-btn w-full md:w-fit px-8 py-4 text-center text-lg inline-block"
     >
-      Launch My Website on WhatsApp
+      Lanzá Tu Web por WhatsApp
     </motion.a>
 
     <motion.p
@@ -56,7 +56,7 @@ const HeroSection = () => (
       transition={{ delay: 0.6 }}
       className="mt-6 text-sm text-muted-foreground"
     >
-      Join 50+ local businesses saving $1,200+/mo in commissions.
+      Más de 50 negocios locales ahorrando +$1.200/mes en comisiones.
     </motion.p>
   </section>
 );
