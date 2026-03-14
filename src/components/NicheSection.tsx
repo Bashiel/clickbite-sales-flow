@@ -1,25 +1,23 @@
 import { motion } from "framer-motion";
 import { Utensils, Scissors, Trophy, ShoppingBag } from "lucide-react";
 
-const WA_LINK =
-  "https://wa.me/542265407060?text=Hola%20ClickBite!%20Quiero%20consultar%20por%20una%20p%C3%A1gina%20para%20mi%20negocio.";
-
 const niches = [
   {
     icon: Utensils,
     title: "GastroFlow",
-    subtitle: "Restaurantes y Locales Gastronómicos",
+    subtitle: "Hamburgueserías y Cafés",
     benefits: [
       "Pedidos Online sin Comisiones",
       "Menú Digital con Código QR",
-      "Pedidos Directo a WhatsApp",
+      "Pedidos Directo a la Cocina",
     ],
-    price: "$150.000",
+    price: "Bonificado",
     priceLabel: "Armado inicial",
-    monthly: "$60.000/mes",
-    monthlyLabel: "Mantenimiento",
-    cta: "Activar GastroFlow",
+    monthly: "$40.000",
+    monthlyLabel: "Suscripción mensual",
+    cta: "Solicitar GastroFlow",
     glowColor: "rgba(245, 158, 11, 0.2)",
+    waText: "Hola ClickBite! Quiero ver una demo de GastroFlow para mi local gastronómico."
   },
   {
     icon: Scissors,
@@ -27,15 +25,16 @@ const niches = [
     subtitle: "Peluquerías y Estéticas",
     benefits: [
       "Reservas Automáticas 24/7",
-      "Reducí Ausencias un 60%",
-      "Catálogo de Servicios y Precios",
+      "Recordatorios Anti-Faltas",
+      "Catálogo de Servicios",
     ],
-    price: "$120.000",
+    price: "Bonificado",
     priceLabel: "Armado inicial",
-    monthly: "$50.000/mes",
-    monthlyLabel: "Mantenimiento",
+    monthly: "$30.000",
+    monthlyLabel: "Suscripción mensual",
     cta: "Activar BarberSync",
     glowColor: "rgba(139, 92, 246, 0.2)",
+    waText: "Hola ClickBite! Quiero automatizar los turnos de mi barbería/salón con BarberSync."
   },
   {
     icon: Trophy,
@@ -43,31 +42,33 @@ const niches = [
     subtitle: "Canchas y Espacios Deportivos",
     benefits: [
       "Disponibilidad en Tiempo Real",
-      "Calendario de Reservas Organizado",
-      "Confirmación Instantánea por WA",
+      "Calendario de Reservas",
+      "Confirmación por WhatsApp",
     ],
-    price: "$150.000",
+    price: "Bonificado",
     priceLabel: "Armado inicial",
-    monthly: "$60.000/mes",
-    monthlyLabel: "Mantenimiento",
+    monthly: "$40.000",
+    monthlyLabel: "Suscripción mensual",
     cta: "Reservar Canchas Online",
     glowColor: "rgba(139, 92, 246, 0.15)",
+    waText: "Hola ClickBite! Me interesa el sistema de reservas para mi complejo deportivo."
   },
   {
     icon: ShoppingBag,
     title: "ShopLine",
-    subtitle: "Tiendas de Ropa e Indumentaria",
+    subtitle: "Tiendas de Indumentaria",
     benefits: [
-      "Catálogo Online con Fotos y Talles",
-      "Pedidos y Consultas por WhatsApp",
+      "Catálogo Online con Talles",
+      "Pedidos Directos",
       "Sin Comisiones por Venta",
     ],
-    price: "$120.000",
+    price: "Bonificado",
     priceLabel: "Armado inicial",
-    monthly: "$70.000/mes",
-    monthlyLabel: "Mantenimiento",
+    monthly: "$30.000",
+    monthlyLabel: "Suscripción mensual",
     cta: "Activar ShopLine",
     glowColor: "rgba(245, 158, 11, 0.15)",
+    waText: "Hola ClickBite! Quiero armar mi catálogo digital con ShopLine."
   },
 ];
 
@@ -95,7 +96,7 @@ const NicheSection = () => (
       className="text-3xl md:text-5xl font-bold tracking-tighter text-center mb-16"
       style={{ textWrap: "balance" } as React.CSSProperties}
     >
-      Una Plataforma, <span className="gradient-text">Cuatro Nichos</span>
+      Sistemas a Medida de <span className="gradient-text">Tu Rubro</span>
     </h2>
 
     <motion.div
@@ -133,15 +134,15 @@ const NicheSection = () => (
           <div className="mb-6 p-4 rounded-xl bg-secondary/50 space-y-2">
             <div className="flex items-baseline justify-between">
               <span className="text-xs text-muted-foreground">{n.priceLabel}</span>
-              <span className="text-lg font-bold gradient-text">{n.price}</span>
+              <span className="text-sm font-bold text-accent">{n.price}</span>
             </div>
             <div className="flex items-baseline justify-between">
               <span className="text-xs text-muted-foreground">{n.monthlyLabel}</span>
-              <span className="text-sm font-semibold text-foreground/80">{n.monthly}</span>
+              <span className="text-lg font-bold gradient-text">{n.monthly}</span>
             </div>
           </div>
           <a
-            href={WA_LINK}
+            href={`https://wa.me/5492265407060?text=${encodeURIComponent(n.waText)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="gradient-btn px-6 py-3 text-center text-sm"
