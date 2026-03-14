@@ -109,17 +109,17 @@ const NicheSection = () => (
         <motion.div
           key={n.title}
           variants={item}
-          className="glass-card p-8 flex flex-col"
+          className="glass-card p-6 sm:p-8 flex flex-col"
         >
           <div
-            className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 animate-float"
+            className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center mb-5 animate-float"
             style={{ background: n.glowColor }}
           >
-            <n.icon className="w-7 h-7 text-accent" />
+            <n.icon className="w-6 h-6 sm:w-7 sm:h-7 text-accent" />
           </div>
-          <h3 className="text-xl font-bold mb-1">{n.title}</h3>
-          <p className="text-sm text-muted-foreground mb-5">{n.subtitle}</p>
-          <ul className="space-y-3 mb-8 flex-1">
+          <h3 className="text-lg sm:text-xl font-bold mb-1">{n.title}</h3>
+          <p className="text-sm text-muted-foreground mb-4">{n.subtitle}</p>
+          <ul className="space-y-2.5 mb-6 flex-1">
             {n.benefits.map((b) => (
               <li
                 key={b}
@@ -130,6 +130,16 @@ const NicheSection = () => (
               </li>
             ))}
           </ul>
+          <div className="mb-6 p-4 rounded-xl bg-secondary/50 space-y-2">
+            <div className="flex items-baseline justify-between">
+              <span className="text-xs text-muted-foreground">{n.priceLabel}</span>
+              <span className="text-lg font-bold gradient-text">{n.price}</span>
+            </div>
+            <div className="flex items-baseline justify-between">
+              <span className="text-xs text-muted-foreground">{n.monthlyLabel}</span>
+              <span className="text-sm font-semibold text-foreground/80">{n.monthly}</span>
+            </div>
+          </div>
           <a
             href={WA_LINK}
             target="_blank"
