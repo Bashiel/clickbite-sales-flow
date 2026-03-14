@@ -23,8 +23,8 @@ const FinalCTA = () => (
       transition={{ delay: 0.15 }}
       className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto"
     >
-      Stop leaving money on the table. Get a site that works for you 24/7 — no
-      commissions, no hassle.
+      Dejá de perder plata en comisiones. Tené un sitio que trabaje por vos
+      24/7 — sin comisiones, sin complicaciones.
     </motion.p>
 
     <motion.a
@@ -39,7 +39,7 @@ const FinalCTA = () => (
       whileTap={{ scale: 0.98 }}
       className="gradient-btn px-10 py-5 text-lg inline-block"
     >
-      Launch My Website Now
+      Lanzá Tu Web Ahora
     </motion.a>
   </section>
 );
